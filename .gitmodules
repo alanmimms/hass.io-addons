@@ -1,0 +1,3 @@
+[submodule "rpi-rf-addon/rpi-rf"]
+	path = rpi-rf-addon/rpi-rf
+	url = https://github.com/milaq/rpi-rf.git

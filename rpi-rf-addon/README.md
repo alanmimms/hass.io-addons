@@ -4,7 +4,9 @@ A 433MHz RF Raspberry Pi add-on for Hass.io.
 
 ## About
 
-This was derived from https://github.com/milaq/rpi-rf.git.
+This was derived from https://github.com/milaq/rpi-rf.git and the
+add-on aspect came from the `example` in
+https://github.com/hassio-addons/repository.git.
 
 ## Installation
 
@@ -68,10 +70,6 @@ based on the following:
 - ``MAJOR``: Incompatible or major changes.
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
-
-## Authors & contributors
-
-The original setup of this repository is by [Alan Mimms][alanmimms].
 
 ## License for the Repository Only
 
