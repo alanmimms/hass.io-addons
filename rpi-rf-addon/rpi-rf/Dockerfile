@@ -1,5 +1,8 @@
-ARG BUILD_FROM=hassioaddons/base-amd64:1.3.3
+ARG BUILD_FROM=hassioaddons/base-aarch64
 FROM ${BUILD_FROM}
+
+# Add env
+ENV LANG C.UTF-8
 
 # Copy root filesystem
 COPY rootfs /
