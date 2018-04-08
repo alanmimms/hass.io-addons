@@ -1,23 +1,17 @@
 # Alan's Hass.io Add-ons: rpi-rf
 
-[![GitHub Release][releases-shield]][releases]
-![Project Stage][project-stage-shield]
-![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE.md)
-
 A 433MHz RF Raspberry Pi add-on for Hass.io.
 
 ## About
 
-This was derived from [![This Python module][https://github.com/milaq/rpi-rf.git]]
+This was derived from https://github.com/milaq/rpi-rf.git.
 
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add my Hass.io add-ons repository][hass.io-addons] to your Hass.io instance.
+1. Add my Hass.io add-ons repository to your Hass.io instance.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/alanmimms/hass.io-addons`.
@@ -74,30 +68,6 @@ based on the following:
 - ``MAJOR``: Incompatible or major changes.
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
-
-## Support
-
-Got questions?
-
-You have several options to get them answered:
-
-- The Home Assistant [Community Forum][forum], we have a
-  [dedicated topic][forum] on that forum regarding this repository.
-- The Home Assistant [Discord Chat Server][discord] for general Home Assistant
-  discussions and questions.
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
-You could also [open an issue here][issue] GitHub.
-
-## Contributing
-
-This is an active open-source project. We are always open to people who want to
-use the code or contribute to it.
-
-We have set up a separate document containing our
-[contribution guidelines](CONTRIBUTING.md).
-
-Thank you for being involved! :heart_eyes:
 
 ## Authors & contributors
 
