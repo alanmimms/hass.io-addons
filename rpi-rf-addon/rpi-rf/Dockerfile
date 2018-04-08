@@ -5,7 +5,17 @@ FROM ${BUILD_FROM}
 COPY rootfs /
 
 # Setup base
-RUN apk add --no-cache coreutils wget
+RUN apk add --no-cache \
+    python3 \
+    jq \
+    py-pip \
+    python \
+    python-dev \
+    python3 \
+    python3-dev \
+&& pip install -U pip \
+&& pip3 install -U pip \
+&& pip3 install rpi-rf
 
 # Scrip to run after startup
 CMD [ "/usr/bin/run.sh" ]
@@ -18,18 +28,18 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Example" \
-    io.hass.description="Example add-on by Community Hass.io Add-ons" \
+    io.hass.name="RPI-RF" \
+    io.hass.description="433MHz RF for Raspberry Pi add-on by Alan Mimms Hass.io Add-ons" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
-    org.label-schema.description="Example add-on by Community Hass.io Add-ons" \
+    maintainer="Alan MImms <alanmimms@gmail.com>" \
+    org.label-schema.description="433MHz RF for Raspberry Pi add-on by Alan Mimms Hass.io Add-ons" \
     org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="Example" \
+    org.label-schema.name="RPI-RF" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.url="https://addons.community" \
-    org.label-schema.usage="https://github.com/hassio-addons/addon-example/tree/master/README.md" \
+    org.label-schema.usage="https://github.com/alanmimms/hass.io-addons/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-example" \
-    org.label-schema.vendor="Community Hass.io Addons"
+    org.label-schema.vcs-url="https://github.com/alanmimms/hass.io-addons" \
+    org.label-schema.vendor="Alan Mimms Hass.io Addons"
