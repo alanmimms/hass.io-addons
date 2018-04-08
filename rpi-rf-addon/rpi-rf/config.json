@@ -1,0 +1,22 @@
+{
+    "name": "rpi-rf",
+    "version": "dev",
+    "slug": "rpi-rf",
+    "description": "433MHz RF for Raspberry Pi add-on by Alan Mimms Hass.io Add-ons",
+    "url": "https://github.com/alanmimms/hass.io-addons",
+    "startup": "application",
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf",
+        "i386"
+    ],
+    "boot": "auto",
+    "hassio_api": true,
+    "options": {
+        "log_level": "info"
+    },
+    "schema": {
+        "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)"
+    }
+  }
